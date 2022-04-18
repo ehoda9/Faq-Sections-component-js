@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <title>FAQ Accordion Card</title>
+</head>
+
+<body>
+  <main class="faq_page">
+    <figure class="faq_box">
+      <img src="./images/illustration-box-desktop.svg" alt="" class="faq_img_box">
+      <figcaption class="faq_img">
+        <img src="./images/illustration-woman-online-desktop.svg" alt="" class="faq_img_desktop">
+        <img src="./images/illustration-woman-online-mobile.svg" alt="" class="faq_img_mobile">
+      </figcaption>
+      <figcaption class="faq_sections">
+        <h1 class="section_title">FAQ</h1>
+        <ul class="sections">
+          <li class="section">
+            <div data-faq="desc-01" class="title">
+              How many team members can I invite?
+              <img class="desc-01 arrow" src="./images/icon-arrow-down.svg" alt="Arrow">
+            </div>
+            <p id="desc-01" class="desc">
+              You can invite up to 2 additional users on the Free plan. There is no limit on
+              team members for the Premium plan.
+            </p>
+          </li>
+          <li class="section">
+            <div data-faq="desc-02"  class="title active">
+              What is the maximum file upload size?
+              <img class="desc-02 arrow reverse" src="./images/icon-arrow-down.svg" alt="Arrow">
+            </div>
+            <p id="desc-02" class="desc show">
+              No more than 2GB. All files in your account must fit your allotted storage space.
+            </p>
+          </li>
+          <li class="section">
+            <div data-faq="desc-03" class="title">
+              How do I reset my password?
+              <img class="arrow desc-03" src="./images/icon-arrow-down.svg" alt="Arrow">
+            </div>
+            <p id="desc-03" class="desc">
+              Click “Forgot password” from the login page or “Change password” from your profile page.
+              A reset link will be emailed to you.
+            </p>
+          </li>
+          <li class="section">
+            <div data-faq="desc-04" class="title">
+              Can I cancel my subscription?
+              <img class="arrow desc-04" src="./images/icon-arrow-down.svg" alt="Arrow">
+            </div>
+            <p id="desc-04" class="desc">
+              Yes! Send us a message and we’ll process your request no questions asked.
+            </p>
+          </li>
+          <li class="section">
+            <div data-faq="desc-05" class="title"> Do you provide additional support?
+
+              <img class="arrow desc-05" src="./images/icon-arrow-down.svg" alt="Arrow">
+            </div>
+            <p id="desc-05" class="desc">
+              Chat and email support is available 24/7. Phone lines are open during normal business hours.
+            </p>
+          </li>
+        </ul>
+      </figcaption>
+    </figure>
+  </main>
+  <script src="app.js"></script>
+</body>
+
+</html>

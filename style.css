@@ -1,0 +1,122 @@
+:root {
+  --Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+  --Soft-red: hsl(14, 88%, 65%);
+  /* Background gradient: */
+  --Soft-violet: hsl(273, 75%, 66%);
+  /* #### Text */
+  --Very-dark-grayis-blue: hsl(237, 12%, 33%);
+  --Dark-grayish-blue: hsl(240, 6%, 50%);
+  --Light-grayish-blue: hsl(240, 5%, 91%);
+}
+/* ###################### */
+/*      Global Rules      */
+/* ###################### */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow: hidden;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.show {
+  display: block !important;
+  transition: 0.5s;
+}
+/* ###################### */
+/*         Faq Box        */
+/* ###################### */
+.faq_page {
+  background-color: var(--Soft-violet);
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+.faq_box {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 0.7fr 0.7fr;
+  padding: 4rem 0;
+  border-radius: 2rem;
+  height: 100%;
+  width: 70%;
+  margin-top: 5%;
+}
+.faq_img {
+  position: relative;
+}
+.faq_img_box {
+  position: absolute;
+  bottom: 20%;
+  left: 14%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.faq_img_mobile {
+  position: absolute;
+  display: none;
+  z-index: 1;
+}
+.faq_img_desktop {
+  position: absolute;
+  right: 130px;
+  z-index: 1;
+}
+
+.faq_sections {
+  max-width: 80%;
+}
+.section_title {
+  color: var(--Very-dark-desaturated-blue);
+  font-size: 2rem;
+  font-weight: 700;
+}
+.section {
+  border-bottom: 1px solid var(--Light-grayish-blue);
+}
+.section .title {
+  font-weight: 400;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  color: var(--Very-dark-desaturated-blue);
+  margin-bottom: 20px;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+.section .title:hover {
+  cursor: pointer;
+  color: var(--Soft-red);
+}
+.section .desc {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--Dark-grayish-blue);
+  margin-bottom: 20px;
+  display: none;
+  transition: 0.5s;
+}
+.arrow {
+  color: var(--Soft-red);
+  width: 17px;
+  height: 17px;
+
+  transition: 0.3s;
+}
+.arrow.reverse,
+.title:hover .arrow {
+  transform: rotate(180deg);
+}
+.active {
+  font-weight: bold !important;
+}
